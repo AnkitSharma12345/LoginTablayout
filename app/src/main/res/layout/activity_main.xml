@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/hj"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_gravity="start"
+        android:layout_marginLeft="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Ankit App"
+        android:layout_marginTop="40dp"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:elevation="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+       android:orientation="vertical"
+
+
+        android:background="@drawable/bg"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/tab_layout"
+            android:background="@drawable/bg"/>
+        
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+          android:id="@+id/view_pager"
+            android:background="@drawable/bg"/>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
